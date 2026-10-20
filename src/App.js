@@ -4,11 +4,13 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 
 function App() {
-  // Tracks current page ('about' or 'home')
-  const [activePage, setActivePage] = useState('about');
+  const [activePage, setActivePage] = useState('home');
 
   return (
-    <Layout activePage={activePage} onNavigate={setActivePage}>
+    <Layout
+      activePage={activePage}
+      onNavigate={setActivePage}
+    >
       {activePage === 'home' ? <Home /> : <AboutUs />}
     </Layout>
   );

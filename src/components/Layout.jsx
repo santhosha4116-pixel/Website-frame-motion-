@@ -3,15 +3,7 @@ import { motion } from 'framer-motion';
 import Header from './Header';
 import Footer from './Footer';
 
-/**
- * Shared Layout Template for TripMate
- * 
- * Provides:
- * 1. Shared TripAdvisor Header
- * 2. Unified Content Area with consistent background (#FAF1ED) and text (#191E23)
- * 3. Smooth Framer Motion page fade-in
- * 4. Shared TripAdvisor Footer
- */
+
 function Layout({ children, activePage, onNavigate }) {
   return (
     <div className="min-h-screen flex flex-col bg-[#FAF1ED] text-[#191E23] antialiased">
